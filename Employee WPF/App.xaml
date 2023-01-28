@@ -1,0 +1,15 @@
+﻿<Application 
+    x:Class="Employee_WPF.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Employee_WPF"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Button" TargetType="Button">
+                <Setter Property="Background" Value="#2c698d" />
+                <Setter Property="Foreground" Value="#ffff" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
