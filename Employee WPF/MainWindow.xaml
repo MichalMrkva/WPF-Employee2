@@ -23,7 +23,8 @@
             <RowDefinition Height="0.5*"/>
             <RowDefinition Height="0.5*"/>
             <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="4.5*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
         <Label Grid.ColumnSpan="2" Content="Jméno" Grid.Column="0" Grid.Row="0" Margin="4" VerticalContentAlignment="Center"/>
         <Label Grid.ColumnSpan="2" Content="Příjmení*" Grid.Column="0" Grid.Row="1" Margin="4" VerticalContentAlignment="Center"/>
@@ -46,6 +47,7 @@
         <Button Style="{StaticResource Button}" Name="btnNovak" Content="Novak" Margin="20,6,20,6" Grid.Column="1" Grid.Row="7" Click="btnNovak_Click"/>
         <Button Style="{StaticResource Button}" Name="btnSaveAll" Content="Aktualizace souboru po editaci ListView" Margin="70,6,70,6" Grid.Column="3" Grid.Row="7" Click="btnSaveAll_Click" ToolTip="Uloží celé ListView do souboru."/>
         <Label Name="ableToSave" FontSize="14" Grid.Column="0" Grid.Row="6" Margin="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="4"/>
+        <Label Name="saveString" FontSize="14" Content="{Binding Status}" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="4"/>
         <Label Name="labErrorFirstName" Grid.Row="0" Grid.Column="3" Content=" " Margin="4" />
         <Label Name="labErrorSecondName" Grid.Row="1" Grid.Column="3" Content=" " Margin="4"/>
         <Label Name="labErrorBday" Grid.Row="2" Grid.Column="3" Content=" " Margin="4"/>

@@ -365,6 +365,7 @@ namespace WpfBinding
 
                     }
                     OnPropertyChanged("FName");
+                    OnPropertyChanged("Status");
 
                 }
             }
@@ -387,6 +388,7 @@ namespace WpfBinding
                         else Checker1.Invoke("sname", false, false);
                     }
                     OnPropertyChanged("SName");
+                    OnPropertyChanged("Status");
 
                 }
             }
@@ -410,6 +412,7 @@ namespace WpfBinding
                     }
                     bDay = value;
                     OnPropertyChanged("BDay");
+                    OnPropertyChanged("Status");
 
                 }
             }
@@ -459,6 +462,7 @@ namespace WpfBinding
                 {
                     hGrad = value;
                     OnPropertyChanged("HGrad");
+                    OnPropertyChanged("Status");
 
                 }
             }
@@ -482,6 +486,7 @@ namespace WpfBinding
                     }
                     job = value;
                     OnPropertyChanged("Job");
+                    OnPropertyChanged("Status");
 
                 }
             }
@@ -505,8 +510,13 @@ namespace WpfBinding
                     }
                     salary = value;
                     OnPropertyChanged("Salary");
+                    OnPropertyChanged("Status");
 
                 }
+            }
+            public string Status
+            {
+                get => "Jméno: \"" + FName + "\" Příjmení: \"" + SName + "\" Narozeniny: \"" + BDay + "\" Nejvyšší dokončené vzdělání: \"" + HGrad + "\" Pracovní pozice: \"" + Job + "\" Výplata: \"" + Salary + " Kč\"";
             }
 
         }    
