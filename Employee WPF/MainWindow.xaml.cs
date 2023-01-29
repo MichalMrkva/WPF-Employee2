@@ -253,7 +253,6 @@ namespace WpfBinding
             {
                 using (StreamWriter sw = new StreamWriter("Employees.txt", true))
                 {
-
                     sw.Write("Jméno: \"" + em.FName + "\" ");
                     sw.Write("Příjmení: \"" + em.SName + "\" ");
                     sw.Write("Narozeniny: \"" + em.BDay + "\" ");
