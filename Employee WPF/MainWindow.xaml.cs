@@ -300,10 +300,9 @@ namespace WpfBinding
                     sw.Write("Vzdělání: \"" + Employee.AllEmp[i].HGrad + "\" ");
                     sw.Write("Pracovní pozice: \"" + Employee.AllEmp[i].Job + "\" ");
                     sw.WriteLine("Plat: \"" + Employee.AllEmp[i].Salary + "\"");
-                    ableToSave.Content = $"Soubor byl aktualizován!";
                 }
-
             }
+            ableToSave.Content = $"Soubor byl aktualizován!";
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
