@@ -24,6 +24,10 @@ namespace WpfBinding
         bool isOKSalary;
         public MainWindow()
         {
+            if (!File.Exists(@"Employees.txt"))
+            {
+                using (StreamWriter sw = File.CreateText(@"Employees.txt")) { }
+            }
             em.Checker1 += Controler1;
             em.Checker2 += Controler2;
             InitializeComponent();
