@@ -24,6 +24,10 @@ namespace WpfBinding
         bool isOKSalary;
         public MainWindow()
         {
+            if (!File.Exists(@"Employees.txt"))
+            {
+                using (StreamWriter sw = File.CreateText(@"Employees.txt")) { }
+            }
             em.Checker1 += Controler1;
             em.Checker2 += Controler2;
             InitializeComponent();
@@ -295,10 +299,9 @@ namespace WpfBinding
                     sw.Write("Vzdělání: \"" + Employee.AllEmp[i].HGrad + "\" ");
                     sw.Write("Pracovní pozice: \"" + Employee.AllEmp[i].Job + "\" ");
                     sw.WriteLine("Plat: \"" + Employee.AllEmp[i].Salary + "\"");
-                    ableToSave.Content = $"Soubor byl aktualizován!";
                 }
-
             }
+            ableToSave.Content = $"Soubor byl aktualizován!";
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
